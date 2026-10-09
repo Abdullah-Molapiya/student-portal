@@ -24,7 +24,7 @@ def home_page():
 
 @myapp.route('/contact')
 def contact():
-    REQUEST_COUNT.labels(endpoint='/').inc()
+    REQUEST_COUNT.labels(endpoint='/contact').inc()
     return """
     <h1>Welcome to Student Portal Home Page</h1>
     """
